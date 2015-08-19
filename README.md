@@ -21,7 +21,6 @@ A place to just document useful commands and all the good stuff in the terminal 
 
 
 ## File System Management
-
 | Command  | Description |
 | ------------- | ------------- |
 | pwd | List current working directory |
@@ -32,18 +31,43 @@ A place to just document useful commands and all the good stuff in the terminal 
 | mv {file} {newFile} | Move/Rename file |
 | cp {file} {newFile} | Copy to file |
 | touch {file} {directory} | Copy to folder |
+| grep {pattern} {file} | Searches file(s) for specific pattern |
 | mkdir {directory} | Create directory |
 | rmdir {directory} | Delete Directory |
 
 
 ## Pipe
+Piping is essentially chaining the outputs of a command into the input of the following command.
+
 | Command  | Description |
 | ------------- | ------------- |
 | {command} \| {command} | Push output of command 1 into command 2 |
 | {command} > {file} | Push output to a file (overwrite) |
 | {command} >> {file} | Push output to a file (append) |
 
-// TODO: Add flag descriptions
+**Example:** Grab all instances of foo from command line history - 
+``` history | grep foo | less ```
+
+
+## Flags
+Flags are command line parameters appended to a command to specify certain settings, multiple flags can be used in combination. **Note -** The following examples will be based on the command ```ls```.  Flags will vary depending on the command they are affiliated with. The following examples are just "common" flags that you may or may not see in other commands.
+
+| Command  | Description |
+| ------------- | ------------- |
+| -a | All (including files starting with .) |
+| -A | Almost all (not including files starting with .) |
+| -d | List directory entries instead of contents |
+| -f | Do not sort |
+| -h | Human readable |
+| -I {Pattern} | Do not show entries with {Pattern} |
+| -r | Reverse order |
+| -R | Recursive |
+| -s | Print size |
+| -S | Sort by size |
+
+**Example:** Grab all files at a specific location with a specific pattern - 
+``` grep -l -f /src/bin/foo bar ```
+
 
 ## History
 | Command  | Description |
