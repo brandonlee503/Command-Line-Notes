@@ -27,9 +27,12 @@ A place to just document useful commands and all the good stuff in the terminal 
 | touch <file> | Create file |
 | cat <file> | Concatenate file and display on command line |
 | rm <file> | Remove file (permanent) |
-| rm -rf <file> | Delete folder and its contents (Recursively force remove) |
+| rm -rf <directory> | Delete folder and its contents (Recursively force remove) |
 | mv <file> <newFile> | Move/Rename file |
 | cp <file> < newFile> | Copy to file |
 | touch <file> <directory> | Copy to folder |
+| mkdir <directory> | Create directory |
+| rmdir <directory> | Delete Directory |
+
 
 // TODO: Add flag descriptions
