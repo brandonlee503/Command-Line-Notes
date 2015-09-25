@@ -19,6 +19,21 @@ A place to just document useful commands and all the good stuff in the terminal 
 | reset | Reset Screen |
 | q | Quit |
 
+## Shortcuts
+
+| Command  | Description |
+| ------------- | ------------- |
+| Tab | Autocomplete |
+| Ctrl + C | Kill process |
+| Ctrl + D | Exit shell |
+| Ctrl + L | Clear Screen |
+| Ctrl + Z | Puts whatever you are running into a suspended background process. fg restores it. |
+| Ctrl + A | Go to beginning of current line |
+| Ctrl + E | Go to end of current line |
+| Ctrl + U | Clears line before cursor position |
+| Ctrl + K | Clears line after cursor position |
+| Ctrl + W | Deletes word before cursor |
+
 
 ## File System Management
 | Command  | Description |
@@ -83,3 +98,6 @@ Flags are command line parameters appended to a command to specify certain setti
 | {command} --help | Display help |
 | man {command} | Display command's documentation |
 | whatis {command} | Display one line description |
+
+
+TODO: BG/FG, heredocs, CURL/netcat/wget/telnet
