@@ -91,6 +91,22 @@ Flags are command line parameters appended to a command to specify certain setti
 | ctrl + r | Search through command history |
 | !!  | Execute previous command |
 
+## Job Control
+Job control allows you to have multiple processes or "jobs", essentially run by the shell.  Press ctrl + z when in a program (ex - vim) to back out of it and put it into the background.
+
+| Command  | Description |
+| ------------- | ------------- |
+| ctrl + z  | Back out of program and put into background |
+| jobs  | List all the current jobs |
+| bg/fg {job}  | Move job to the background or foreground |
+| kill {job}  | Kill a specific job |
+
+**Example:** Send job "top" to foreground - 
+```
+[1]+  Stopped                 top
+brandon@brandon-Inspiron-560:~$ fg "%top"
+```
+
 
 ## Help and Documentation
 | Command  | Description |
@@ -100,4 +116,24 @@ Flags are command line parameters appended to a command to specify certain setti
 | whatis {command} | Display one line description |
 
 
-TODO: BG/FG, heredocs, CURL/netcat/wget/telnet
+## Terminal Tricks
+| Command  | Description |
+| ------------- | ------------- |
+| >> (Heredocs)  | Execute all commands within these lines between the two points. |
+
+**Example:** Send a GET request to a local host - 
+```
+$ nc localhost 8008 << HERE
+>
+> GET /api/v0/course/all HTTP/1.0
+> 
+> HERE
+```
+
+
+## Linux Safe Reset
+Alt + SysRq + R E I S U B
+
+"Reboot even if system utterly broken"
+
+TODO: CURL/netcat/wget/telnet
