@@ -108,6 +108,20 @@ brandon@brandon-Inspiron-560:~$ fg "%top"
 ```
 
 
+## Networking
+```telnet``` and ```netcat``` are both networking commands for reading from and writing to network connections using TCP or UDP. ```wget``` and ```curl``` are programs that retrieve content from web servers.
+
+| Command  | Description |
+| ------------- | ------------- |
+| telnet {application} | Command line interface client to TCP application |
+| netcat {application} | Better (arguably) command line interface client to TCP application |
+| netstat | Lists all the TCP/UDP connections on your network |
+| curl {URL} | Retrieve URL page |
+| wget {URL} | Retrieve URL page |
+
+Examples coming soon!!!
+
+
 ## Help and Documentation
 | Command  | Description |
 | ------------- | ------------- |
@@ -116,10 +130,11 @@ brandon@brandon-Inspiron-560:~$ fg "%top"
 | whatis {command} | Display one line description |
 
 
-## Terminal Tricks
+## Other Useful Stuff
 | Command  | Description |
 | ------------- | ------------- |
 | >> (Heredocs)  | Execute all commands within these lines between the two points. |
+| chmod +x {script} | Make your bash script an executable |
 
 **Example:** Send a GET request to a local host - 
 ```
@@ -135,5 +150,3 @@ $ nc localhost 8008 << HERE
 Alt + SysRq + R E I S U B
 
 "Reboot even if system utterly broken"
-
-TODO: CURL/netcat/wget/telnet
