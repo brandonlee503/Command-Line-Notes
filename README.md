@@ -88,7 +88,7 @@ Flags are command line parameters appended to a command to specify certain setti
 | Command  | Description |
 | ------------- | ------------- |
 | history n | Display previous commands inputed (limit to n) |
-| Ctrl + r | Search through command history |
+| Ctrl + R | Search through command history |
 | !!  | Execute previous command |
 
 ## Job Control
@@ -96,7 +96,7 @@ Job control allows you to have multiple processes or "jobs", essentially run by 
 
 | Command  | Description |
 | ------------- | ------------- |
-| ctrl + z  | Back out of program and put into background |
+| Ctrl + Z  | Back out of program and put into background |
 | jobs  | List all the current jobs |
 | bg/fg {job}  | Move job to the background or foreground |
 | kill {job}  | Kill a specific job |
