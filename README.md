@@ -11,11 +11,11 @@ A place to just document useful commands and all the good stuff in the terminal 
 | ls -lh | Long Listing with human readable file sizes |
 | ls -R | List contents recursively |
 | cd | Home directory |
-| cd {directory} | Change directory |
+| cd {directory} | Change Directory |
 | sudo {command} | Runs command as super user |
 | sudo !! | Runs sudo on previous command |
 | top | Displays all active processes |
-| clear | Clear screen |
+| clear | Clear Screen |
 | reset | Reset Screen |
 | q | Quit |
 
@@ -25,7 +25,7 @@ A place to just document useful commands and all the good stuff in the terminal 
 | ------------- | ------------- |
 | Tab | Autocomplete |
 | Ctrl + C | Kill process |
-| Ctrl + D | Exit shell |
+| Ctrl + D | Exit Shell |
 | Ctrl + L | Clear Screen |
 | Ctrl + Z | Puts whatever you are running into a suspended background process. fg restores it. |
 | Ctrl + A | Go to beginning of current line |
@@ -88,7 +88,7 @@ Flags are command line parameters appended to a command to specify certain setti
 | Command  | Description |
 | ------------- | ------------- |
 | history n | Display previous commands inputed (limit to n) |
-| ctrl + r | Search through command history |
+| Ctrl + r | Search through command history |
 | !!  | Execute previous command |
 
 ## Job Control
